@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper,fleqn]{jsarticle}
+%
+%\usepackage{amsmath,amssymb}
+\usepackage{newtxtext, newtxmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{ascmac}
+\usepackage{subfigure}
+\usepackage{siunitx}
+\usepackage{url}
+%
+\setlength{\textwidth}{\fullwidth}
+\setlength{\textheight}{40\baselineskip}
+\addtolength{\textheight}{\topskip}
+\setlength{\voffset}{-0.2in}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\allowdisplaybreaks
+%
+\newcommand{\divergence}{\mathrm{div}\,}  %ダイバージェンス
+\newcommand{\grad}{\mathrm{grad}\,}  %グラディエント
+\newcommand{\rot}{\mathrm{rot}\,}  %ローテーション
+%
+\title{RLC直列共振回路}
+\author{E1534\\根津 宏輔}
+\date{\today}
+%
+\begin{document}
+\section{目的}
+RLC直列共振回路の特性を理解し、これを実験的に確かめること。
+%
+\section{原理}
+図\ref{fig:1a}にRLC直列回路を示す。
+\begin{figure}[htbp]
+\label{fig:1a}
+\center{
+ \includegraphics[clip, width=0.35\columnwidth]{img/1a.eps}
+ \caption{RLC直列回路}
+}
+\end{figure}
+
+いま回路に流れる電流を、$i=\sqrt{2}I\sin \omega t$と仮定すると
+
+\begin{eqnarray}
+\left\{\vbox to 24pt{} \begin{array}{ll}
+e_{R}&=\sqrt{2} RI\sin \omega t\\
+e_{L}&=\sqrt{2}\omega LI \sin \biggl( \omega t+\dfrac{\pi}{2}\biggr)\\
+e_{C}&=\sqrt{2}\frac{1}{\omega C}I \sin \biggl( \omega t-\dfrac{\pi}{2}\biggr)\\
+e&=e_{R}+e_{L}+e_{C}=\sqrt{2}E\sin (\omega t + \theta)
+\end{array} \right.
+\end{eqnarray}
+
+これらをベクトル図に示した物が図\ref{fig:1b}である。
+\begin{figure}[h]
+\label{fig:1b}
+\center{
+\includegraphics[clip, width=0.35\columnwidth]{img/1b.eps}
+\caption{ベクトル図}
+}
+\end{figure}
+これより
+\begin{align}
+&E^{2}={E_{R}}^{2}+(E_{L}-E{C})^{2}=\Biggl\{R^{2}+\biggl(\omega L-\frac{1}{\omega C}\biggr)^{2}\Biggr\}I^{2}=Z^{2}I^{2}\nonumber\\
+&\therefore E=ZI=\Biggl\{R^{2}+\biggl(\omega L-\frac{1}{\omega C}\biggr)^{2}\Biggr\}^{\frac{1}{2}}I
+\end{align}
+また
+\begin{eqnarray}
+\theta &=\tan ^{-1}\frac{E_{L}-E{C}}{E_{R}}=\tan ^{-1}\frac{\omega L-\dfrac{1}{\omega C}}{R}
+\end{eqnarray}
+ところで図\ref{fig:1a}の回路においてリアクタンス成分が0になる条件を直列共振条件という。
+このときは
+\begin{align}
+&\omega _{0}L-\frac{1}{\omega _{0}C}=0\\
+&\omega_{0}=\frac{1}{\sqrt{LC}}\\
+&Z_{0}=R\\
+&I_{0}=\frac{E}{R}\\
+&\theta =\tan^{-1}0=0^\circ
+\end{align}
+が成立し、インピーダンス$Z$は最小に、電流は最大に、また位相角$\theta$は0となる。
+また、このとき
+\begin{align}
+\left\{\vbox to 24pt{} \begin{array}{ll}
+E_{R0}&=RI_{0}=R\times\dfrac{E}{R}=E\\
+E_{C0}&=\dfrac{1}{\omega_{0}C}I_{0}=\dfrac{E}{\omega_{0}CR}\\
+E_{L0}&=\omega_{0}LI_{0}=\omega_{0}L\times\dfrac{E}{R}
+\end{array} \right.
+\end{align}
+となる。
+いま電源周波数$f$を変化したときの$I,\ Z,\ \theta,\ $の変化を図\ref{fig:2}に模式的に示す。
+図よりわかるように、直列共振回路は特定の周波数成分の信号を取り出すときに使用される。
+以上の性質を実験によって確かめることとする。
+\begin{figure}[htbp]
+ \centering
+ \subfigure[電流の変化]{
+  \includegraphics[clip, width=0.3\columnwidth]{img/2a.eps}
+  \label{fig:2a}}
+ \subfigure[インピーダンスの変化]{
+  \includegraphics[clip, width=0.3\columnwidth]{img/2b.eps}
+  \label{fig:2b}}
+ \subfigure[位相の変化]{
+  \includegraphics[clip, width=0.3\columnwidth]{img/2c.eps}
+  \label{fig:2c}}
+ \caption{数値積分の考え方}
+ \label{fig:6}
+\end{figure}
+%
+\section{実験方法}
+\subsection{接続回路}
+実験回路を図\ref{fig:3}に示す。
+回路素子部分をブレッドボード上に結線し交流電源として発信器を用いる。
+発信器の出力側にオシロスコープのCH1側を接続し、抵抗RにCH2側を接続して波形を観測から実験値を読み取る。
+また、適宜デジタルマルチメータを用いて各素子の電圧を観測する。
+\begin{figure}[h]
+\label{fig:3}
+\center{
+\includegraphics[clip, width=0.35\columnwidth]{img/3.eps}
+\caption{実験回路図}
+}
+\end{figure}
+
+\subsection{周波数特性}
+(1)実験回路を結線して発振器出力を常に一定に保ちながら周波数を500 Hz～100 kHzまで変化させて各素子の電圧を測定し、周波数に対する電流の特性を測定する、
+特に、電流が最大となる今日進展はより細かく測定する。
+($R=1\ \si{[k\ohm]}, C=47\ \si{[nF]}, 発振器出力=1\ \si{[V]}$)
+(2)抵抗値を変えて(1)の実験を行う。
+ただし、束帯電圧は抵抗Rのみとする。
+\subsection{静電容量依存性}
+周波数を固定して回路の静電容量を変化させ、制電少量に対する電流の特性を測定する。
+コンデンサCの値は$0.001\ \si{\micro F}～0.2\ \si{\micro F}$まで変化させて測定を行う。
+($f=11\ \si{[kHz]}, 出力=1\ \si{[V]}, R=1\ \si{[k\ohm]},$Lは(1)で用いた物、抵抗の電圧を測定し、$I=|V_{R}|/R$とする。)
+\subsection{$r_{L}$の測定}
+コイルの束帯分$r_{L}$をマルチメータを使って測定する。
+以後、コイルの抵抗としては、この値を使用する。
+
+\subsection{使用器具}
+この実験で使用した器具を表\ref{cal:item}に示す。
+\begin{table}[]
+\centering
+\caption{使用器具}
+\label{cal:item}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{器具名} & メーカ名    & 型番      & シリアルナンバー   \\ \hline
+デュアルディスプレイマルチメータ          & TEXIO   & DL-2040 & 13020563   \\ \hline
+デュアルディスプレイマルチメータ          & TEXIO   & DL-2040 & 130205538  \\ \hline
+発信器                       & KENWOOD & AG-2040 & 6050017    \\ \hline
+可変コンデンサ                   & HP      & 4440B   & 1224J04420 \\ \hline
+\end{tabular}
+\end{table}
+%
+\section{実験結果}
+
+\section{結果の考察}
+%
+\section{調査事項}
+%
+\end{document}
