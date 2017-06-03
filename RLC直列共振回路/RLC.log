@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  3 JUN 2017 13:03
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  3 JUN 2017 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,14 +730,17 @@ Package: translator 2010/06/12 ver 1.10
 pings.tex))) (c:/w32tex/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (./RLC.aux)
+) (./RLC.aux
+
+LaTeX Warning: Label `cal:result1(1)' multiply defined.
+
+)
 \openout1 = `RLC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 29.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 29
 .
-
-(c:/w32tex/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (c:/w32tex/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 29.
@@ -968,21 +971,28 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.6pt on input line 133.
 
 
-LaTeX Warning: Reference `cal:result1(1)' on page 3 undefined on input line 155
-.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 156.
 
-[3] [4] (./RLC.aux)
+[3]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5] (./RLC.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 14204 strings out of 493671
- 274217 string characters out of 6151254
- 271968 words of memory out of 5000000
- 17629 multiletter control sequences out of 15000+600000
+ 14203 strings out of 493671
+ 274204 string characters out of 6151254
+ 272968 words of memory out of 5000000
+ 17628 multiletter control sequences out of 15000+600000
  196309 words of font info for 314 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  34i,16n,37p,10372b,635s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on RLC.dvi (4 pages, 11540 bytes).
+Output written on RLC.dvi (5 pages, 15408 bytes).
