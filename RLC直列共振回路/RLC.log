@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  3 JUN 2017 13:13
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  3 JUN 2017 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,7 +978,10 @@ LaTeX Warning: No positions in optional float specifier.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] [5] (./RLC.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5] [6] (./RLC.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -987,12 +990,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14203 strings out of 493671
- 274204 string characters out of 6151254
- 272968 words of memory out of 5000000
- 17628 multiletter control sequences out of 15000+600000
+ 14204 strings out of 493671
+ 274217 string characters out of 6151254
+ 274968 words of memory out of 5000000
+ 17629 multiletter control sequences out of 15000+600000
  196309 words of font info for 314 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  34i,16n,37p,10372b,635s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on RLC.dvi (5 pages, 15408 bytes).
+Output written on RLC.dvi (6 pages, 17448 bytes).
