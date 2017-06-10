@@ -8,6 +8,7 @@
 \usepackage{subfigure}
 \usepackage{siunitx}
 \usepackage{url}
+\usepackage{here}
 %
 \setlength{\textwidth}{\fullwidth}
 \setlength{\textheight}{40\baselineskip}
@@ -101,9 +102,10 @@ E_{L0}&=\omega_{0}LI_{0}=\omega_{0}L\times\dfrac{E}{R}
  \subfigure[位相の変化]{
   \includegraphics[clip, width=0.3\columnwidth]{img/2c.eps}
   \label{fig:2c}}
- \caption{数値積分の考え方}
- \label{fig:6}
+ \caption{直列共振回路の特性}
+ \label{fig:2}
 \end{figure}
+
 %
 \section{実験方法}
 
@@ -253,11 +255,109 @@ E_{L0}&=\omega_{0}LI_{0}=\omega_{0}L\times\dfrac{E}{R}
 \label{cal:result3}
 \begin{tabular}{|l|}
 \hline
-コイルの抵抗分 {[}$\Omega${]} \\ \hline \hline
-49.9            \\ \hline
+コイルの抵抗分 {[}Ω{]}            \\ \hline
+\multicolumn{1}{|r|}{49.9} \\ \hline
 \end{tabular}
 \end{table}
-\section{結果の考察}
+\clearpage
+
+\section{結果の整理}
+\subsection{周波数特性}
+以下の式より周波数に対する電流特性を図\ref{fig:f-I}に示す。
+\begin{align}
+I&=\frac{e_{R}}{R}
+\end{align}
+
+\begin{figure}[!h]
+\center{
+\includegraphics[clip, width=0.7\columnwidth]{img/f-I.eps}
+\caption{周波数に対する電流特性}
+\label{fig:f-I}
+}
+\end{figure}
+
+また以下の式より周波数に対するインピーダンス特性を図\ref{fig:f-z}に示す。
+\begin{align}
+Z&=\frac{e}{I}\\
+\end{align}
+
+\begin{figure}[H]
+\center{
+\includegraphics[clip, width=0.7\columnwidth]{img/f-z.eps}
+\caption{周波数に対するインピーダンス特性}
+\label{fig:f-z}
+}
+\end{figure}
+
+ここで共振周波数$f_{0}$について考える。
+図\ref{fig:f-I}より電流が最大になる周波数が最大周波数と考えられるので、
+\begin{align}
+f_{0}&=4000\ \si{Hz}
+\end{align}
+
+これよりLの値が求められる。
+\begin{align}{
+&2\pi f_{0}L=\frac{1}{2\pi f_{0}C}\nonumber\\
+&L=33.7\ \si{mH}\nonumber
+}\end{align}
+
+これらの値と以下の式を用いて周波数に対する位相特性を図\ref{fig:f-theta}に示す。
+\begin{align}
+\theta&=\tan^{-1}\frac{\omega L-\frac{1}{\omega C}}{R+R_{L}}
+\end{align}
+
+\begin{figure}[H]
+\center{
+\includegraphics[clip, width=0.7\columnwidth]{img/f-theta.eps}
+\caption{周波数に対する位相特性}
+\label{fig:f-theta}
+}
+\end{figure}
+
+Lの値が分かったことにより電流の計算値$I_{math}$が求められる。
+以下の式より電流の値を求めた上で周波数に対する電流特性を図\ref{fig:f-Imath}に示す。
+
+\begin{align}
+I_{math}&=\frac{V}{\sqrt{(R+r_{L})^2+(2\pi f_{0}L-\frac{1}{2\pi f_{0}})^2}}
+\end{align}
+
+\begin{figure}[H]
+\center{
+\includegraphics[clip, width=0.7\columnwidth]{img/f-Imath.eps}
+\caption{周波数に対する電流特性(計算によって求めた値を使用)}
+\label{fig:f-Imath}
+}
+\end{figure}
+
+また(i)$f<f_{0}$, (ii)$f=f_{0}$, (iii)$f>f_{0}$のときについて回路の状態をベクトル図で表現する。
+
+\begin{figure}[H]
+\center{
+\subfigure[(i) f<$f_{0}$の場合]{
+\includegraphics[clip, width=0.25\columnwidth]{img/ff0.eps}
+}
+\subfigure[(ii) f=$f_{0}$の場合]{
+\includegraphics[clip, width=0.25\columnwidth]{img/f0.eps}
+}
+\subfigure[(iii) f>$f_{0}$の場合]{
+\includegraphics[clip, width=0.25\columnwidth]{img/f0f.eps}
+}}\end{figure}
+
+また回路の先鋭度を求める。
+実験1の先鋭度を$Q_{1}$、$Q_{2}$とする。
+\begin{align}
+Q_{1}&=\frac{1}{2\pi f_{0}RC}\nonumber\\
+&=0.847\\
+Q_{2}&=0.423\
+\end{align}
+\subsection{C依存性}
+実験3より静電容量に対する電流特性を図\ref{fig:c-I}に示す。
+\begin{figure}[H]
+\center{
+\includegraphics[clip, width=0.7\columnwidth]{img/c-I.eps}
+\caption{静電容量に対する電流特性}
+\label{fig:c-I}
+}\end{figure}
 %
 \section{調査事項}
 %
