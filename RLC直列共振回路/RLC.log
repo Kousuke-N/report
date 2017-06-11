@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  10 JUN 2017 23:27
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  11 JUN 2017 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,39 +1005,20 @@ File: img/f0.eps Graphic file (type eps)
  <img/f0.eps>
 File: img/f0f.eps Graphic file (type eps)
  <img/f0f.eps>
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 354.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 354.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 354.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 354.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 354.
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
-
-
-LaTeX Warning: Reference `fig:c-I' on page 9 undefined on input line 354.
-
 File: img/c-I.eps Graphic file (type eps)
-<img/c-I.eps> [9] [10] (./RLC.aux)
-
-LaTeX Warning: There were undefined references.
-
+ <img/c-I.eps>
+[9] [10] [11] [12] (./RLC.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 14323 strings out of 493671
- 275874 string characters out of 6151254
- 277054 words of memory out of 5000000
- 17732 multiletter control sequences out of 15000+600000
- 214322 words of font info for 343 fonts, out of 8000000 for 9000
+ 14319 strings out of 493671
+ 275811 string characters out of 6151254
+ 277064 words of memory out of 5000000
+ 17729 multiletter control sequences out of 15000+600000
+ 211241 words of font info for 340 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 34i,16n,37p,10372b,666s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 34i,17n,37p,10372b,723s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on RLC.dvi (10 pages, 21972 bytes).
+Output written on RLC.dvi (12 pages, 30584 bytes).
