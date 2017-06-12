@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  11 JUN 2017 23:39
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  12 JUN 2017 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,21 +1009,17 @@ File: img/c-I.eps Graphic file (type eps)
  <img/c-I.eps>
 [9] [10] [11]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 460.
+(Font)              scaled to size 9.60999pt on input line 459.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 460.
- [12] (./RLC.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(Font)              scaled to size 9.60999pt on input line 459.
+ [12] (./RLC.aux) ) 
 Here is how much of TeX's memory you used:
- 14323 strings out of 493671
- 275850 string characters out of 6151254
- 277085 words of memory out of 5000000
- 17733 multiletter control sequences out of 15000+600000
+ 14322 strings out of 493671
+ 275839 string characters out of 6151254
+ 277088 words of memory out of 5000000
+ 17732 multiletter control sequences out of 15000+600000
  211522 words of font info for 342 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  34i,17n,37p,10372b,723s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on RLC.dvi (12 pages, 32472 bytes).
+Output written on RLC.dvi (12 pages, 32468 bytes).
