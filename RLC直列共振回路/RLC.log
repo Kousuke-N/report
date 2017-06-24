@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  12 JUN 2017 12:22
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  18 JUN 2017 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,56 +970,53 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4] [5] [6]
-File: img/f-I.eps Graphic file (type eps)
- <img/f-I.eps>
+File: img/f-I(2).eps Graphic file (type eps)
+ <img/f-I(2).eps>
 File: img/f-z.eps Graphic file (type eps)
  <img/f-z.eps> [7
 
 ]
 File: img/f-theta.eps Graphic file (type eps)
  <img/f-theta.eps>
-File: img/f-Imath.eps Graphic file (type eps)
-
-<img/f-Imath.eps> [8]
 File: img/ff0.eps Graphic file (type eps)
  <img/ff0.eps>
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 338.
+(Font)              scaled to size 8.0pt on input line 326.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 338.
+(Font)              scaled to size 6.2pt on input line 326.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 338.
+(Font)              scaled to size 7.19995pt on input line 326.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 338.
+(Font)              scaled to size 5.57996pt on input line 326.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 338.
+(Font)              scaled to size 8.0pt on input line 326.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 6.2pt on input line 338.
+(Font)              scaled to size 6.2pt on input line 326.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.95818pt on input line 338.
+(Font)              scaled to size 5.95818pt on input line 326.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 338.
+(Font)              scaled to size 8.0pt on input line 326.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.2pt on input line 338.
+(Font)              scaled to size 6.2pt on input line 326.
 File: img/f0.eps Graphic file (type eps)
- <img/f0.eps>
+
+<img/f0.eps>
 File: img/f0f.eps Graphic file (type eps)
- <img/f0f.eps>
+ <img/f0f.eps> [8]
 File: img/c-I.eps Graphic file (type eps)
- <img/c-I.eps>
-[9] [10] [11]
+ <img/c-I.eps> [9] [10]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 459.
+(Font)              scaled to size 9.60999pt on input line 433.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 459.
- [12] (./RLC.aux) ) 
+(Font)              scaled to size 9.60999pt on input line 433.
+ [11] (./RLC.aux) ) 
 Here is how much of TeX's memory you used:
- 14322 strings out of 493671
- 275839 string characters out of 6151254
- 277088 words of memory out of 5000000
- 17732 multiletter control sequences out of 15000+600000
+ 14319 strings out of 493671
+ 275806 string characters out of 6151254
+ 277078 words of memory out of 5000000
+ 17730 multiletter control sequences out of 15000+600000
  211522 words of font info for 342 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  34i,17n,37p,10372b,723s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on RLC.dvi (12 pages, 32468 bytes).
+Output written on RLC.dvi (11 pages, 30252 bytes).
